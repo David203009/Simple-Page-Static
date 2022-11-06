@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.header{
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    font-weight: bold;
+    align-items: center;
+    z-index: 1;    
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header .logo:hover{
+    transform: scale(1.1);
+}
+
+.header .logo h1{
+    text-transform: uppercase;
+}
+
+.header .logo img{
+    height: 90px;
+    width: auto;
+    margin-right: 20px;
+    
+}
+
+.header .links{
+    list-style: none;
+}
+
+.header .links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+
+.header .links li:hover{
+    transform: scale(1.2);
+}
+
+.header .links a:hover{
+    color: darkred;
+}
+
+.header .btn button{
+    font-size: 25px;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: solid black;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+    border: solid red;
+    color: red;
+}
+
+
+.content{
+    font-size: 40px;
+    margin: 0px 100px;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10%;
+    padding: 0px;
+    box-shadow: 10px 10px 30px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+
+
+.description img{
+    height: 500px;
+    width: auto;
+    margin-right: 30px;
+    border-radius:  50px 0 0 50px ;
+}
+
+.description p{
+    margin-right: 20px;
+    text-align: start;
+    font-size: 40px;
+}
+
+.options{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    padding: 20px;
+    font-weight: bold;
+    border: solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+
+
+.cards{
+    display: flex;
+    margin: 50px 10%;
+    justify-content: space-between;
+}
+
+.cards .card{
+    padding: 20px;
+    height: auto;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 30px ;
+    transition: all 1s;
+    
+}
+
+.cards .card:hover{
+    transform: scale(1.1);
+}
+
+.cards .card h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cards .card img{
+    margin: 25px 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cards .card p{
+    font-size: 25px;
+    padding: 0 12%;
+}
+
+.cards .card .btn button{
+    font-size: 25px;
+    margin: 20px 0;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: solid black;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.cards .card .btn button:hover{
+    border: solid red;
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+}
+
+.about{
+    font-size:30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.about p{
+    box-shadow: 10px 10px 30px;
+}
+
+.about .one{
+    width: 100%; 
+    display: flex;
+    justify-content: start;
+}
+
+.about .one p{
+    padding: 30px;
+    background-color: cadetblue;
+    border-radius: 30px 0 0 30px;
+    text-align: center;
+    width: 35%;
+}
+
+.about .two {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .two p{
+    width: 35%;
+    background-color: beige;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about .three{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.about .three p{
+    width: 35%;
+    background-color: coral;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 0 30px 30px 0;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    background-color: aliceblue;
+    padding: 30px 10%;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer .redes{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .redes div{
+    margin-left: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.footer .redes div:hover{
+    transform: scale(1.2);
+    color: blue;
+}
+
+.footer .redes img{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer .redes img:hover{
+    transform: scale(1.2);
+
+}
+
+.footer .redes h2{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
